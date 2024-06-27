@@ -12,3 +12,13 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+
+const userData = {
+    name : "vishal",
+    surname : "narola",
+}
+
+app.get('/userData', (req, res) => {
+    res.json(userData);
+})
